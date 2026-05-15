@@ -28,7 +28,18 @@ Environment: Designed for Google Colab (GPU accelerated)
 
 📊 Results & Analysis
 
+Final Training Logs
+
+--- Final Model Evaluation ---
+Model_1_Baseline          | Test Accuracy: 72.44%
+Model_2_Regularized       | Test Accuracy: 68.04%
+Model_3_Attention_MSE     | Test Accuracy: 73.32%
+
+
 1. Training Dynamics (The Optimization Path)
+
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/8ff92fcb-c624-4473-b35b-3d2ac0908173" />
+
 
 We tracked the training loss over 10 epochs to observe how Adam and RMSprop navigate their respective loss landscapes.
 
@@ -40,6 +51,8 @@ Attention + MSE (Green): Operated on a fundamentally smaller scale (MSE vs. Loga
 
 2. Final Generalization (Test Accuracy)
 
+<img width="842" height="444" alt="image" src="https://github.com/user-attachments/assets/7d686a2a-0540-4267-8f04-c1d925bdb34b" />
+
 The ultimate metric of an optimization strategy is its ability to generalize to unseen data.
 
 Winner: The Attention + MSE model achieved the highest accuracy (73.32%). Despite MSE being sub-optimal for classification compared to Cross-Entropy, the Spatial Attention mechanism provided enough representational power to overcome this mathematical handicap.
@@ -49,6 +62,9 @@ Runner-Up: Baseline (72.44%).
 Underperformed: Regularized Network (68.04%), suggesting the chosen L2 penalty was overly restrictive for a network of this depth, leading to slight underfitting.
 
 3. Explainable AI (XAI) - Spatial Attention
+
+<img width="1159" height="407" alt="image" src="https://github.com/user-attachments/assets/874186be-ab45-490d-a1c0-83c88023aac8" />
+
 
 To understand why Model 3 performed the best, we extracted the Spatial Attention maps to visualize the optimization focus.
 
