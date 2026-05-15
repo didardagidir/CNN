@@ -58,7 +58,7 @@ Instead of treating all pixels equally, the network learned to mathematically pr
 
 Clone this repository:
 
-git clone [https://github.com/didardagidir/optimization-cnn-comparison.git](https://github.com/didardagidir/optimization-cnn-comparison.git)
+git clone [https://github.com/didardagidir/CNN.git](https://github.com/didardagidir/CNN.git)
 
 
 Open the Jupyter Notebook / Google Colab file.
